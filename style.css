@@ -1,0 +1,64 @@
+body {
+    background-image: url("space.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center {
+    border-radius: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    background-color: crimson;
+    border-radius: 30px;
+    color: black;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bubble {
+    margin: 0;
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 5%;
+    left: 60%;
+}
+
+.bubble2 {
+    margin: 0;
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 5%;
+    right: 60%;
+}
+
+.paragraph {
+    border-style: groove;
+    border-color: crimson;
+    margin: 0;
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 50px;
+}
