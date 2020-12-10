@@ -2,10 +2,10 @@
   "name": "node-quote",
   "version": "1.0.0",
   "description": "",
-  "main": "logic.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify logic.js -o bundle.js"
+    "build": "browserify main.js -o bundle.js"
   },
   "keywords": [],
   "author": "",
