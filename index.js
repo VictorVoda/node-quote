@@ -62,12 +62,12 @@ function getQuote() {
             "The most beautiful moments in life are moments when you are expressing your joy, not when you are seeking it.\n" +
             "Too many people are hungry not because there is dearth of food. It is because there is dearth of love and care in human hearts.\n" +
             "If you resist change, you resist life.\n" +
-            "When pain, misery, or anger happen, it is time to look within you, not around you.";
-
+            "When pain, misery, or anger happen, it is time to look within you, not around you."
+        
         text = text.split("\n");
 
         for (let i = 0; i < text.length; i++) {
-           let key = text[i];
+           let key = i;
            let value = text[i];
 
             store.put(value, key);
@@ -75,7 +75,7 @@ function getQuote() {
 
         //shuffling text
         //Trying to prevent that a random number is the same
-        let random = Math.floor(Math.random() * (19 - 0 + 1)) + 0;
+        let random = Math.floor(Math.random() * (19 + 1));
         let quote = db.transaction("QuotesStore").objectStore("QuotesStore").get(random);
 
         quote.onsuccess = function (e) {
