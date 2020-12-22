@@ -62,8 +62,28 @@ function getQuote() {
             "The most beautiful moments in life are moments when you are expressing your joy, not when you are seeking it.\n" +
             "Too many people are hungry not because there is dearth of food. It is because there is dearth of love and care in human hearts.\n" +
             "If you resist change, you resist life.\n" +
-            "When pain, misery, or anger happen, it is time to look within you, not around you."
-        
+            "When pain, misery, or anger happen, it is time to look within you, not around you.\n" +
+            "If you resist change, you resist life.\n" +
+            "When pain, misery, or anger happen, it is time to look within you, not around you.\n" +
+            "The fear is simply because you are not living with life, You are living in your mind.\n" +
+            "If you think you are big, you become small. If you know you are nothing, you become unlimited. That’s the beauty of being a human being.\n" +
+            "Learning to listen is the essence of intelligent living.\n" +
+            "If you think hundred percent logically, there is really no possibility of life.\n" +
+            "To forgive does not mean to forget. To forgive means not to carry any bitterness in you, because that destroys your life.\n" +
+            "Intellect is like a knife – the sharper, the better. When you try to handle every aspect of your life with your intellect, it is like trying to stitch your clothes with a knife\n" +
+            "Adventure is not in a particular activity. It is a way to approach life. Every step can be an adventure.\n" +
+            "Especially when we face hard times, it is all the more important that we remain balanced and focused on what matters to us.\n" +
+            "It is in challenging times that human genius and ingenuity unfold.\n" +
+            "If you do not do what you cannot do, that is what no problem. But if you do not do what you can do, you are a tragedy.\n" +
+            "Guilt is a socially cultivated emotion, a poison directed towards yourself.\n" +
+            "One who is constantly making U-turns obviously does not want to go anywhere.\n" +
+            "Do everything like it is the last thing you do. There is nothing to hold back, nothing to save for later. \n" +
+            "A life of excess is not a good life. Exces of anything leads to perversion and depresseion. \n" +
+            "Just because you believe, does not mean that you know.\n" +
+            "Do not be dead serious about your life, it is just a play."
+
+        //save these qoutes in an array. Shuffle the array and take the first element
+
         text = text.split("\n");
 
         for (let i = 0; i < text.length; i++) {
@@ -75,7 +95,7 @@ function getQuote() {
 
         //shuffling text
         //Trying to prevent that a random number is the same
-        let random = Math.floor(Math.random() * (19 + 1));
+        let random = Math.floor(Math.random() * ((text.length - 1) + 1));
         let quote = db.transaction("QuotesStore").objectStore("QuotesStore").get(random);
 
         quote.onsuccess = function (e) {
